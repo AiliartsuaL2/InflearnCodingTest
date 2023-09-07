@@ -32,7 +32,7 @@ public class BackJoon1463 {
         else if(n%2==0){
             dp[n] = Math.min(recursion(n/2),recursion(n-1))+1;
         }else{
-            dp[n] = dp[n-1] +1;
+            dp[n] = recursion(n-1)+1;
         }
         return dp[n];
     }
