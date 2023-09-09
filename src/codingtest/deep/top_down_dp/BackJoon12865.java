@@ -53,7 +53,7 @@ public class BackJoon12865 {
         // 방문처리
         visited[index][weight] = true;
 
-        // 짐을 넣었을경우
+        // 짐을 넣었을경우 현재 짐의 무게 추가
         int yesBack = recursion(index+1,weight+backArr[index][0]);
         // 짐을 안넣었을경우
         int noBack = recursion(index+1,weight);
